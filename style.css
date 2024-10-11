@@ -297,7 +297,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 90%; /* Chiều rộng cho footer */
 }
 
 .footer-left {
@@ -332,6 +332,7 @@ footer {
 .footer-right {
     flex: 1;
     text-align: right;
+    overflow: hidden; /* Ẩn phần thừa nếu có */
 }
 
 .footer-right img {
@@ -379,18 +380,19 @@ footer {
         text-align: center; /* Căn giữa nội dung văn bản của hướng dẫn */
         width: 100%; /* Đảm bảo các bước hướng dẫn chiếm 100% chiều rộng trên màn hình nhỏ */
     }
-    footer .footer-content {
+    .footer-container {
         flex-direction: column; /* Chuyển các phần tử từ hàng ngang sang hàng dọc */
         align-items: center; /* Căn giữa các phần tử */
+        width: 100%; /* Đảm bảo chiều rộng tối đa */
     }
 
-    footer .logo, footer .contact-info {
+    .footer-left, .footer-right {
         text-align: center; /* Căn giữa nội dung */
         margin: 10px 0; /* Thêm khoảng cách giữa các phần tử */
     }
 
-    footer .footer-logo {
-        text-align: center; /* Căn giữa cho logo footer */
-        margin: 10px 0; /* Thêm khoảng cách */
+    .footer-right img {
+        max-width: 100%; /* Đảm bảo logo không vượt quá chiều rộng phần tử chứa */
+        height: auto; /* Giữ tỷ lệ chiều cao */
     }
 }
