@@ -12,56 +12,48 @@ body {
     color: #333;
     background-color: #f4f4f4;
 }
+header img{
+    width: 200px;
+    height:auto;
 
+}
 /* Phần header */
 header {
     background-color: white;
-    padding: 20px;
+    padding: 10px; /* Giảm padding cho header */
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Đảm bảo logo và nút nằm hai bên, phần giữa ở giữa */
+    justify-content: space-between;
     border-bottom: 2px solid #ccc;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Đảm bảo chiều rộng 100% */
 }
-
-/* Căn chỉnh logo bên trái */
-header .logo {
-    flex: 1;
-}
-
-header .logo img {
-    width: 250px; /* Điều chỉnh kích thước logo */
-    height: auto;
-}
-
-/* Căn chỉnh tiêu đề và mô tả ở giữa */
-header .header-content {
-    flex: 2; /* Dành nhiều không gian hơn cho phần nội dung ở giữa */
-    text-align: center;
-}
-
 
 /* Button nhóm trong header - Căn phải */
 .btn-group {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 5px; /* Giảm khoảng cách giữa các nút */
 }
 
 .btn-group button {
-    padding: 10px 20px;
+    width: 120px; /* Hoặc kích thước mà bạn muốn */
+    padding: 10px 0; /* Padding dọc cho nút */
     background-color: red;
     color: white;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center; /* Căn giữa nội dung trong nút */
 }
 
 .btn-group button:hover {
     background-color: darkred;
 }
+
+
 
 /* Phần giữa với flexbox */
 .intro-wrapper {
@@ -349,6 +341,15 @@ footer {
 
 /* Media queries cho thiết bị di động */
 @media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column; /* Chuyển các nút từ hàng ngang sang hàng dọc nếu cần */
+        align-items: flex-end; /* Căn phải các nút */
+    }
+
+    .btn-group button {
+        width: 100%; /* Đặt chiều rộng nút bằng 100% */
+        margin-bottom: 5px; /* Thêm khoảng cách giữa các nút */
+    }
     .feature-wrapper, .partners-wrapper {
         flex-direction: column;
         text-align: center;
