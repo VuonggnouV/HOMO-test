@@ -262,32 +262,24 @@ ul li::before {
 .guide-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Căn giữa theo chiều dọc */
-    height: 100%; /* Đảm bảo chiếm hết chiều cao */
-    min-height: 300px; /* Chiều cao tối thiểu để căn chỉnh dễ dàng */
-}
-
-.guide-title {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* Căn giữa tiêu đề theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    text-align: center; /* Căn chữ giữa theo chiều ngang */
+    align-items: center; 
+    flex-wrap: wrap; /* Cho phép các phần tử tự động xuống dòng khi không đủ chỗ */
+    width: 100%; /* Đảm bảo chiều rộng tối đa là 100% của phần tử cha */
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước thực tế */
 }
 
 .guide-title h2 {
-    font-size: 28px; /* Kích thước chữ */
     color: #e74c3c;
+    text-align: center;
     font-weight: bold;
-    margin: 0 0 0 -100px;
-}
-.guide-steps {
-    margin-left: 20px;
+    width: 100%; /* Đảm bảo tiêu đề chiếm 100% chiều rộng, tránh tràn ra ngoài */
+    margin-bottom: 20px;
 }
 
-.guide-steps p {
-    font-size: 16px;
-    margin-bottom: 10px;
+.guide-steps {
+    flex: 1;
+    margin-left: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không làm vượt kích thước phần tử */
 }
 
 
@@ -368,5 +360,36 @@ footer {
 
     h2 {
         font-size: 24px;
+    }
+    .guide-wrapper {
+        flex-direction: column; /* Chuyển các phần tử từ hàng ngang sang hàng dọc trên màn hình nhỏ */
+        align-items: center; /* Đảm bảo căn giữa các phần tử */
+        width: 100%; /* Đảm bảo chiều rộng tối đa */
+    }
+
+    .guide-title h2 {
+        text-align: center;
+        width: 100%; /* Đảm bảo tiêu đề luôn chiếm 100% chiều rộng */
+        margin-bottom: 10px;
+    }
+
+    .guide-steps {
+        margin-left: 0;
+        text-align: center; /* Căn giữa nội dung văn bản của hướng dẫn */
+        width: 100%; /* Đảm bảo các bước hướng dẫn chiếm 100% chiều rộng trên màn hình nhỏ */
+    }
+    footer .footer-content {
+        flex-direction: column; /* Chuyển các phần tử từ hàng ngang sang hàng dọc */
+        align-items: center; /* Căn giữa các phần tử */
+    }
+
+    footer .logo, footer .contact-info {
+        text-align: center; /* Căn giữa nội dung */
+        margin: 10px 0; /* Thêm khoảng cách giữa các phần tử */
+    }
+
+    footer .footer-logo {
+        text-align: center; /* Căn giữa cho logo footer */
+        margin: 10px 0; /* Thêm khoảng cách */
     }
 }
