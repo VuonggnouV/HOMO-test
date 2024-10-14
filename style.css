@@ -363,7 +363,7 @@ footer {
     }
 
     .btn-group button {
-        width: 100%; /* Đặt chiều rộng nút bằng 100% */
+        width: 50%; /* Đặt chiều rộng nút bằng 100% */
         margin-bottom: 5px; /* Thêm khoảng cách giữa các nút */
     }
     .feature-wrapper, .partners-wrapper {
