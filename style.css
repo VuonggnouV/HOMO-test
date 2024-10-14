@@ -110,20 +110,7 @@ header {
     height: auto;
     border-radius: 10px;
 }
-.feature button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.feature button:hover {
-    background-color: #0056b3;
-}
 .partner button {
     background-color: #28a745;
     color: white;
