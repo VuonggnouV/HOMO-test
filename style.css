@@ -40,7 +40,8 @@ header {
 .btn-group button {
     width: 120px; /* Hoặc kích thước mà bạn muốn */
     padding: 10px 0; /* Padding dọc cho nút */
-    background-color: red;
+    background-color: #a60102
+    ;
     color: white;
     font-size: 16px;
     border: none;
@@ -69,7 +70,7 @@ header {
 
 .intro-wrapper h1 {
     font-size: 40px;
-    color: #e74c3c;
+    color: #a60102;
     margin-bottom: 10px;
     font-weight: 1000;
 }
@@ -112,7 +113,7 @@ header {
 }
 
 .partner button {
-    background-color: #28a745;
+    background-color: #a60102;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -123,12 +124,12 @@ header {
 }
 
 .partner button:hover {
-    background-color: #218838;
+    background-color: darkred;
 }
 
 h2 {
     font-size: 28px;
-    color: #e74c3c;
+    color: #a60102;
     margin-bottom: 10px;
 }
 
@@ -180,7 +181,7 @@ ul li::before {
 
 .pricing form h2 {
     text-align: left; /* Căn trái tiêu đề */
-    color: #e74c3c;
+    color: #a60102;
     margin-bottom: 20px;
 }
 
@@ -201,7 +202,7 @@ ul li::before {
 .pricing form button {
     padding: 15px 30px;
     font-size: 18px;
-    background-color: red;
+    background-color: #a60102;
     color: white;
     border: none;
     border-radius: 5px;
@@ -249,7 +250,7 @@ ul li::before {
 }
 
 .guide-title h2 {
-    color: #e74c3c;
+    color: #a60102;
     text-align: center;
     font-weight: bold;
     width: 100%; /* Đảm bảo tiêu đề chiếm 100% chiều rộng, tránh tràn ra ngoài */
@@ -337,7 +338,7 @@ footer {
     right: 20px;
     z-index: 100;
     display: none; /* Ẩn nút ban đầu */
-    background-color: #700101;
+    background-color: #a60102;
     color: white;
     text-align: center;
     padding: 10px;

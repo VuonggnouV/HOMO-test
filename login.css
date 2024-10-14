@@ -31,7 +31,7 @@ body {
 .login-form h2 {
     font-size: 2.2em;
     margin-bottom: 10px;
-    color: #b22222;
+    color: #a60102;
 }
 
 .login-form p {
@@ -69,7 +69,7 @@ body {
 }
 
 .btn {
-    background-color: #b22222;
+    background-color: #a60102;
     color: white;
     padding: 10px;
     border: none;
@@ -81,7 +81,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #a00;
+    background-color: darkred;
 }
 
 .signup-link {
