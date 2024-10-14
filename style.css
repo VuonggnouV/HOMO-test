@@ -365,7 +365,7 @@ footer {
     .btn-group button {
         width: 50%; /* Đặt chiều rộng nút bằng 100% */
         margin-bottom: 5px; /* Thêm khoảng cách giữa các nút */
-        font-size: 80%;
+        font-size: 60%;
     }
     .feature-wrapper, .partners-wrapper {
         flex-direction: column;
