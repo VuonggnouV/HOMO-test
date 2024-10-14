@@ -343,8 +343,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    border-radius: 10%;
-    font-size: 15px;
+    border-radius: 3%;
+    font-size: 25px;
     cursor: pointer;
     height:auto;
     width: 50px;
